@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Running Some Test Methods">
+    <test name="Running 1 Method">
+        <classes>
+            <class name="tek.tdd.tests.SecurityTest">
+                <methods>
+                    <!--                    <include name="validateSingIn" />-->
+                    <exclude name="validateSingIn" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
