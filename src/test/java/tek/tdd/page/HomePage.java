@@ -20,4 +20,7 @@ public class HomePage extends SeleniumUtility {
 
     @FindBy(id = "accountLink")
     public WebElement accountLink;
+
+    @FindBy(className = "Toastify__toast-body")
+    public WebElement toastBody;
 }

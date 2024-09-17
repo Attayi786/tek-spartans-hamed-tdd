@@ -16,21 +16,19 @@ public class MoreAboutDataTable {
 
     @DataProvider(name = "testingData1")
     public Object[][] testDataWithObject() {
-        Object[][] data = {
+        return new Object[][]{
                 {"Ali", 3},
                 {"Alen", 4},
                 {"Mohammad", 8}
         };
-        return data;
     }
 
     @DataProvider
     public Person[] testWithCustomPOJO() {
-        Person[] data = {
+        return new Person[]{
                 new Person("Ali", 3),
                 new Person("Alen", 4)
         };
-        return data;
     }
 
     @Test(dataProvider = "testWithCustomPOJO")

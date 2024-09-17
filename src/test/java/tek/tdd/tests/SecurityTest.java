@@ -1,5 +1,6 @@
 package tek.tdd.tests;
 
+import com.aventstack.extentreports.service.ExtentTestManager;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,6 +16,10 @@ public class SecurityTest extends UIBaseClass {
     @Test
     public void validateSingIn() {
         clickOnElement(homePage.signInLink);
+
+        ExtentTestManager.getTest()
+                .info("Sign In with credential");
+
         signInPage.doSignIn("mohammad2536@gmail.com", "Password@123");
         boolean isDisplayed = isElementDisplayed(homePage.accountLink);
 
@@ -26,7 +31,7 @@ public class SecurityTest extends UIBaseClass {
     Validate error message displays "wrong username or password"
     Story 3: Navigate to sign in page and sign in with valid user and invalid password
     Validate error message display  "wrong username or password"
-    push to your github account
+    push to your gitHub account
      */
     @Test(dataProvider = "InvalidTestData")
     public void negativeSignInTests(String email, String password) {
