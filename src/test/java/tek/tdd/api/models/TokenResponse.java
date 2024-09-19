@@ -5,12 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class TokenRequest {
-
+public class TokenResponse {
+    private String fullName;
     private String username;
-    private String password;
+    private String token;
+    private Date tokenExpiration;
+    private Date issueAt;
+    private AccountType accountType;
 }

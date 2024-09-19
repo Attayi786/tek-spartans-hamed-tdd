@@ -27,4 +27,6 @@ public class ApiTestsBase extends BaseSetup {
         body.put("password", password);
         return body;
     }
+
+
 }
