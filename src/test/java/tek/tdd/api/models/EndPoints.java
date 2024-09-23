@@ -8,7 +8,8 @@ public enum EndPoints {
     ADD_PRIMARY_ACCOUNT("/api/accounts/add-primary-account"),
     GET_PRIMARY_ACCOUNT("/api/accounts/get-primary-account"),
     GET_ACCOUNT("/api/accounts/get-account"),
-    GET_ALL_PLAN_CODE("/api/plans/get-all-plan-code");
+    GET_ALL_PLAN_CODE("/api/plans/get-all-plan-code"),
+    USER_PROFILE("/api/user/profile");
 
     private final String value;
 
