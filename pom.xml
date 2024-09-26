@@ -99,7 +99,7 @@
                 <version>3.5.0</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/runners/api-runner.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/runners/${type}.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
